@@ -30,19 +30,21 @@ class RecipeShower : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recipe_shower)
 
-        myIngredient = intent.getStringExtra(MAIN_INGREDIENT).toString()
+        val myIngredient = intent.getStringExtra(MAIN_INGREDIENT).toString()
 
         nextButton = findViewById(R.id.next_button)
         previousButton = findViewById(R.id.previous_button)
         recipeName = findViewById(R.id.recipe_name)
         recipeDescription = findViewById(R.id.recipe_description)
 
+        var i = 0
         recipeViewModel.currentIndex = 2
-    //    for (recipe in recipeViewModel.recipeBank) {
-      //      if (recipe.mainIngredient == myIngredient) {
-       //         recipeViewModel.currentIndex = recipe.textResId
-        //    }
-        //}
+        for (recipe in recipeViewModel.recipeBank) {
+            if (recipe.mainIngredient == myIngredient) {
+                recipeViewModel.currentIndex = i
+            }
+            i += 1
+        }
 
 
 

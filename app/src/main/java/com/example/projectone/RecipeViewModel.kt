@@ -10,11 +10,11 @@ class RecipeViewModel: ViewModel() {
 
     val recipeBank = listOf(
         Recipe(R.string.recipe_name_goes_here, "Rice","This describes how to make a recipe with rice"),
-        Recipe(R.string.jambalaya, "Rice", "Add rice to lots of other stuff"),
+        Recipe(R.string.jambalaya, "Rice", "Start some rice in your rice cooker, or prepare rice to your preferred method. Saute the vegetables on medium high and then mix the cooked rice with the vegetables"),
         Recipe(R.string.pasta, "Corn", "This pasta has corn in it."),
-        Recipe(R.string.chicken_and_waffles, "Chicken", "I think you can"),
+        Recipe(R.string.chicken_and_waffles, "Chicken", "Cook waffles. Put fried chicked in between two waffles! "),
         Recipe(R.string.useless_recipe, "Corn", "Useless Recipe with some corn in it"),
-        Recipe(R.string.bread, "Flour", "Mix flour and other stuff and let it rise then cook it and you have bread"),
+        Recipe(R.string.bread, "Flour", "Preheat oven to a certain temperature. Mix flour and other stuff and let it rise then cook it and you have bread"),
         Recipe(R.string.french_toast, "Eggs", "Beat eggs, add cinnamon, then you can dip in the bread and cook on a skillet or griddle!"))
 
     var currentIndex = 0
