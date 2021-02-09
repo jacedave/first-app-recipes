@@ -14,4 +14,5 @@
     <string name="recipe_description_goes_here">Recipe description goes here</string>
     <string name="previous_button">PREVIOUS RECIPE</string>
     <string name="next_button">NEXT RECIPE</string>
+    <string name="logo">This is a logo.</string>
 </resources>

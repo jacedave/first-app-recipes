@@ -24,13 +24,15 @@ class MainActivity : AppCompatActivity() {
 
         submitButton.setOnClickListener {
             val myText = editText.text.toString()
+            if (myText == "") {
+                Toast.makeText(this, R.string.instruction_Toast, Toast.LENGTH_SHORT).show()
 
-            // Start RecipeShower Activity
-            val intent = RecipeShower.newIntent(this@MainActivity, myText)
-            startActivity(intent)
+            } else {
+                // Start RecipeShower Activity
+                val intent = RecipeShower.newIntent(this@MainActivity, myText)
+                startActivity(intent)
+            }
 
-            // Toast.makeText(this, myText, Toast.LENGTH_SHORT)
-            //        .show()
         }
     }
 }
