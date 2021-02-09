@@ -1,7 +1,17 @@
 <resources>
-    <string name="app_name">Project One</string>
+    <string name="app_name">Recipe Generator</string>
     <string name="opening_Title">Let\'s look for recipes!</string>
     <string name="instructions_main">Type ingredient here.</string>
     <string name="instruction_Toast">Please add one ingredient</string>
     <string name="submit_button">SUBMIT</string>
+    <string name="recipe_name_goes_here">Recipe name goes here</string>
+    <string name="pasta">Pasta</string>
+    <string name="french_toast">French Toast</string>
+    <string name="jambalaya">Jambalaya</string>
+    <string name="bread">Bread</string>
+    <string name="chicken_and_waffles">Chicken-n-waffles</string>
+    <string name="useless_recipe">More of the same</string>
+    <string name="recipe_description_goes_here">Recipe description goes here</string>
+    <string name="previous_button">PREVIOUS RECIPE</string>
+    <string name="next_button">NEXT RECIPE</string>
 </resources>

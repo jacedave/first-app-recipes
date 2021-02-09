@@ -1,5 +1,7 @@
 package com.example.projectone
 
+import android.content.ClipData.newIntent
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -17,23 +19,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var myText = R.string.instructions_main
-
         submitButton = findViewById(R.id.submit_button)
         editText = findViewById(R.id.editTextIngredient)
 
-        editText.setOnClickListener {
-            editText.setText("")
-        }
-
         submitButton.setOnClickListener {
-            val messageResId = when {
-                myText == R.string.instructions_main -> R.string.instruction_Toast
-                else -> R.string.instruction_Toast
-            }
+            val myText = editText.text.toString()
 
-            Toast.makeText(this, messageResId, Toast.LENGTH_SHORT)
-                    .show()
+            // Start RecipeShower Activity
+            val intent = RecipeShower.newIntent(this@MainActivity, myText)
+            startActivity(intent)
+
+            // Toast.makeText(this, myText, Toast.LENGTH_SHORT)
+            //        .show()
         }
     }
 }
